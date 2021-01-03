@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARAS MELA</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url('Images/bg7.jpg') no-repeat center center/cover;
+            height: 642px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home h1 {
+            color: black;
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #home p {
+            color: black;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Bree Serif', serif;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+        }
+
+        #services .box {
+            border: 5px solid rgb(0, 0, 210);
+            padding: 34px;
+            margin: 2px 55px;
+            border-radius: 28px;
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #services .box p {
+            font-family: 'Bree Serif', serif;
+        }
+
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+            background: url('Images/bg8.jpg') no-repeat center center/cover;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 9px;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Bree Serif', serif;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+        .h-primary {
+            font-family: 'Bree Serif', serif;
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Bree Serif', serif;
+            font-size: 2.3rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 5px solid goldenrod;
+            background-color: deepskyblue;
+            color: deeppink;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="Images/logo3.png" alt="Mela.com">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to Saras Mela 2020</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        <button class="btn">Visit Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="Images/Mela 1.jpg" alt="">
+                <h2 class="h-secondary center">Saras Fair</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam,
+                    recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Fuga sunt impedit distinctio sequi quis odit reprehenderit, nobis recusandae
+                    doloribus autem ratione a, similique non. Consectetur debitis accusamus nisi optio illum.</p>
+            </div>
+            <div class="box">
+                <img src="Images/Mela 2.jpg" alt="">
+                <h2 class="h-secondary center">About Handicrafts</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab
+                    dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Sint quis, sapiente, quos magni ipsam facilis dolores veniam mollitia repellat
+                    explicabo inventore aperiam saepe vero dicta fugiat animi magnam, iste minima!</p>
+            </div>
+            <div class="box">
+                <img src="Images/Mela 3.jpg" alt="">
+                <h2 class="h-secondary center">Special Attractions</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam
+                    minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Quisquam ipsam error illo iusto reiciendis facilis obcaecati dolorem, voluptates
+                    hic dignissimos, atque explicabo vero odio neque dolor labore non omnis sapiente!</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Foodies.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+        var a = 23;
+        var b = "Samridhi";
+        var num1 = 9;
+        var num2 = 5;
+        console.log("The sum of num1 and num2=" + (num1 + num2));
+        console.log("The subtraction of num1 and num2=" + (num1 - num2));
+        console.log("The multiplication of num1 and num2=" + (num1 * num2));
+        console.log("The division of num1 and num2=" + (num1 / num2));
+        var string = "this's it's ";
+        var string = 'Rima said,"she is sick"';
+        var name = 'Samridhi';
+        var academy = 'Gyanin Academy';
+        var message = 'Samridhi is a student';
+        console.log(name + academy + message + string);
+        console.log(string);
+        var str = "This is a string";
+        console.log(str);
+        var position = str.indexOf('is');
+        console.log(position);
+        position = str.lastIndexOf('is');
+        console.log(position)
+        var substr = str.slice(1, 11);
+        console.log(substr);
+        var substr = str.substring(1, 11);
+        console.log(substr);
+        var substr1 = str.substr(1, 11);
+        console.log(substr1);
+        var replaced = str.replace('string', 'Samridhi');
+        console.log(str);
+        console.log(replaced);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var newString = str.concat('New String');
+        console.log(newString);
+        var strWithWhitespaces = "                     this                             contains                                whitespaces   ";
+        console.log(strWithWhitespaces);
+        console.log(strWithWhitespaces.trim());
+        var char2 = str.charAt(2);
+        console.log(char2)
+        console.log(str[3])
+        var string1 = "This is a string";
+        console.log(string1);
+        string1 = "This is not a string";
+        console.log(string1);
+        let age = 6;
+        if (age > 18) {
+            console.log("You can drink water");
+        }
+        else if (age == 2) {
+            console.log("Age is 2")
+        }
+        else if (age == 5) {
+            console.log("Age is 5")
+        }
+        else {
+            console.log("You can drink Cold Drink");
+        }
+        const cups = 47;
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4")
+                break;
+
+            case 41:
+                console.log("The value of cups is 41")
+                break;
+
+            case 42:
+                console.log("The value of cups is 42")
+                break;
+
+            case 43:
+                console.log("The value of cups is 43")
+                break;
+
+            default:
+                console.log("The value of cups is none of 4, 41, 42, 43")
+                break;
+        }
+    </script>
+</body>
+
+</html>
